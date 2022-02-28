@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Countdown</title>
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+  <body>
+    <div class="header-image">
+      <img src="/assets/top-image.svg" />
+    </div>
+    <main>
+      <div class="countdown">
+        <h1>Ready to Launch in...</h1>
+        <div class="counter">
+          <!-- <div class="labels">
+            <span>Dias</span>
+            <span>Horas</span>
+            <span>Minutos</span>
+            <span>Segundos</span>
+          </div> -->
+          <div class="values">
+            <span class="days"></span>
+            <span class="none">:</span>
+            <span class="hours"></span>
+            <span class="none">:</span>
+            <span class="minutes"></span>
+            <span class="none">:</span>
+            <span class="seconds"></span>
+          </div>
+        </div>
+        <h3>Inscreva-se para saber mais sobre o lançamento</h3>
+        <button onclick="Modal.open()">Inscreva-se</button>
+      </div>
+      <img src="/assets/rocket.svg" alt="Rocket" />
+    </main>
+    <div class="footer-image">
+      <img src="/assets/bottom-image.svg" />
+    </div>
+    <div class="modal-overlay">
+      <div class="modal">
+        <h2>Faça sua inscrição aqui</h2>
+        <form action="#" onsubmit="Modal.close()">
+          <label for="name"> Nome </label>
+          <input type="text" name="name" />
+          <label for="email"> Email </label>
+          <input type="email" name="email" />
+          <button type="submit">Enviar</button>
+        </form>
+      </div>
+    </div>
+    <script src="/scripts.js"></script>
+  </body>
+</html>
